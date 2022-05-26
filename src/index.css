@@ -1,0 +1,229 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: auto;
+  background-color: black;
+
+}
+
+h1 {
+  color: #9d3be1;
+  text-align: left;
+  left: 0;
+  top: 0;
+}
+
+.icon {
+
+}
+
+.navbar {
+    float: left;
+    overflow: hidden;
+    background-color: black;
+    font-family: Arial;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height:auto;
+    align-items: flex-start;
+    padding:2vmin;
+
+  }
+  .links {
+    display:flex;
+    height: 10vmin;
+    align-items: center;
+  }
+
+  .links a{
+    display: flex;
+    width:100%;
+    top:0;
+    padding: 16px 14px;
+    justify-content: center;
+  }
+
+  .links img{
+    display: flex;
+    left: 0;
+    top:0;
+    padding: 16px 14px;
+  }
+
+  .rightnav {
+    display:flex;
+    align-items: center;
+
+    right: 1vmin;
+    top:0;
+  }
+
+
+
+
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .navbar img {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 0px;
+    text-decoration: none;
+  }
+
+
+
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+    width:15.5vw;
+    /* border: 5px solid #7fd8ac;
+    border-radius: 8px; */
+  }
+
+
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 2em;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+
+  .dropbtn {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #9d3be1;
+  }
+
+  .rightnav a:hover {
+    background-color: black;
+  }
+
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    width: 16vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #9d3be1;
+  }
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+
+  .smIcon {
+
+    padding:0px;
+    margin:0px;
+    max-width:100px;
+    height:50px;
+  }
+
+  .mainbody {
+      height: 100vh;
+      width: auto;
+      display: flex;
+      flex-direction: row;
+      color: white;
+      padding: 7px;
+  }
+
+  .mainbody p{
+      height: 100vh;
+      width: auto;
+      color: white;
+      margin: 10px;
+  }
+
+.photobox-placeholer {
+   max-width: 60vw;
+   max-height:60vh;
+   left: 2vw;
+ }
+
+ .pCont {
+   display: flex;
+   flex-direction: column;
+   text-align: justify;
+   padding: 10px;
+   margin: 10px;
+   width: 40vw;
+   height: 40vh;
+   font-size: 1.3em;
+   text-align: center;
+   line-height: 200%;
+ }
+
+ .hmpl {
+   max-width: 15vmax;
+   max-height: 15vmax;
+   position: absolute;
+   left: -2vmin;
+   bottom: -7vmax;
+   /* border: 5px solid #7fd8ac; */
+ }
+
+ .contact {
+     max-width: 15vmax;
+     max-height: 15vmax;
+     position: absolute;
+     right: 2vmin;
+     bottom: -14vmax;
+     border: 5px solid #7fd8ac;
+ }
