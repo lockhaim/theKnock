@@ -41,6 +41,7 @@ h1 {
     width: 100vw;
     height:inherit;
     position: fixed;
+    z-index: 3;
   }
 
   .links {

@@ -7,10 +7,37 @@ import { SocialIcon } from 'react-social-icons';
 import ReactDOM from 'react-dom';
 import pbph from './TheKnock303.jpg';
 import hmp from './hmplw.png';
+import g1 from './TheKnock3031.jpg';
+import { Carousel } from 'react-carousel-minimal';
 
 
 
 function App() {
+
+  const data =
+  [{
+      image: './TheKnock303.jpg',
+      caption: "The Knock"
+    },
+    {
+      image: "https://therooster.com/files/inline/images/forty_even_-_river_bar_gallery_l8gacy_5280.jpg",
+      caption: "Test 1"
+    },
+    {
+      image: 'https://therooster.com/files/inline/images/jay_triiiple_-_river_bar_andgallery_l8gacy_5280.jpg',
+      caption: "Artist 1"
+    },
+  ];
+
+  const captionStyle = {
+    fontSize: '2em',
+    fontWeight: 'bold',
+  }
+  const slideNumberStyle = {
+    fontSize: '20px',
+    fontWeight: 'bold',
+  }
+
   return (
     <div className="App">
 
@@ -69,10 +96,40 @@ function App() {
           </div>
         </div>
         <img src={logo} className="mainlogo" alt="logo" />
+
+        <div style={{ textAlign: "center" }}>
+        <div>
+          <Carousel
+            data={data}
+            time={10000}
+            width="1920px"
+            height="1080px"
+            captionStyle={captionStyle}
+            radius="10px"
+            slideNumber={true}
+            slideNumberStyle={slideNumberStyle}
+            captionPosition="bottom"
+            automatic={true}
+            dots={true}
+            pauseIconColor="white"
+            pauseIconSize="40px"
+            slideBackgroundColor="darkgrey"
+            slideImageFit="cover"
+            thumbnails={true}
+            thumbnailWidth="100px"
+            style={{
+              textAlign: "center",
+              maxWidth: "1920px",
+              maxHeight: "1080px",
+              margin: "auto",
+              zindex: '0',
+            }}
+          />
+        </div>
+      </div>
+
         <div class='mainbody'>
-          <div class='imgCont'>
-            <img class='photobox-placeholer' src={pbph} alt="pbph" />
-          </div>
+
           <div class='pCont'>
             <p>
               Here at The Knock we are a monthly house party, highlighting the emcees, DJs, and the creatives that give the hip hop community life.
@@ -93,6 +150,9 @@ function App() {
         <div class="contact">
           <a href="#Contact" >Contact Us</a>
         </div>
+
+
+
       </main>
     </div>
   );
