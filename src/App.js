@@ -18,9 +18,6 @@ function App() {
       <main>
 
         <div class="navbar">
-        <div className="mainlogo">
-          <img src={logo} className="mainlogo" alt="logo" />
-        </div>
           <div class='leftnav'>
 
             <div class="links">
@@ -63,6 +60,7 @@ function App() {
               </div>
             </div>
           </div>
+
           <div class='rightnav'>
           <SocialIcon url="https://www.youtube.com/channel/UCWol48d1OWvCiBH47TEJdJQ" network='youtube' class='sm1' />
             <a href='https://www.youtube.com/channel/UCWol48d1OWvCiBH47TEJdJQ'>
@@ -70,7 +68,7 @@ function App() {
             </a>
           </div>
         </div>
-
+        <img src={logo} className="mainlogo" alt="logo" />
         <div class='mainbody'>
           <div class='imgCont'>
             <img class='photobox-placeholer' src={pbph} alt="pbph" />
@@ -92,7 +90,7 @@ function App() {
         <div class='hmpl'>
           <img class='hmpl' src={hmp} alt="hmp" />
         </div>
-        <div class="navbar dropdown dropbtn contact">
+        <div class="contact">
           <a href="#Contact" >Contact Us</a>
         </div>
       </main>
